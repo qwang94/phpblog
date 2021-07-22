@@ -12,7 +12,7 @@
 </head>
 <?php 
     ob_start(); 
-     require __DIR__.'/../partials/header.php'; 
+    require __DIR__.'/../partials/header.php'; 
 ?>
 
 <style>

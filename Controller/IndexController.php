@@ -2,17 +2,17 @@
 
 function index()
 {
-    require('View/frontend/index.php');
+    require 'View/frontend/index.php';
 }
 
 function connexion() 
 {
-    require('View/frontend/cms/connexion.php');
+    require 'View/frontend/cms/connexion.php';
 }
 
 function subscription() 
 {
-    require('View/frontend/cms/inscription.php');
+    require 'View/frontend/cms/inscription.php';
 }
 
 
