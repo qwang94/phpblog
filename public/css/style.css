@@ -1,14 +1,20 @@
 /* GENERAL */
 
 body {
-    font-family: 'lato',sans-serif;
+    font-family: 'lato', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
-ul,ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -21,12 +27,12 @@ section {
     padding: 45px 0 80px 0;
 }
 
-section .heading{
+section .heading {
     text-align: center;
     padding-bottom: 40px;
 }
 
-section .heading h2{
+section .heading h2 {
     text-transform: uppercase;
 }
 
@@ -61,22 +67,14 @@ section .heading h2{
     background: transparent;
 }
 
-.button1:hover{
+.button1:hover {
     background: white;
     color: #d82c2e;
     text-decoration: none;
 }
 
 /* MENU */
-/* .navbar {
-    background: #d82c2e;
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-} */
-
-.navbar{
+.navbar {
     background-color: #d82c2e!important;
     font-size: 1.1rem;
     border-bottom: 1px solid #fff;
@@ -84,13 +82,12 @@ section .heading h2{
     letter-spacing: 2px;
 }
 
-
-.navbar .navbar-nav a{
+.navbar .navbar-nav a {
     display: inline-block;
     background-color: #d82c2e;
     text-transform: uppercase;
 } 
-.nav-link{
+.nav-link {
     margin-left: 30px;
 }
 .active {
@@ -99,11 +96,7 @@ section .heading h2{
     border-radius: 7px;
 }
 
-
-
-
 /* ABOUT */
-
 #about {
     padding-top:50px;
     background-color: #d82c2e!important;
@@ -126,8 +119,6 @@ section .heading h2{
     color: #333;
 }
 
-
-
 /* SKILLS */
 #skills {
     background: #fff;
@@ -138,8 +129,8 @@ section .heading h2{
 }
 
 #skills .progress {
-    height:40px;
-    margin:30px 20px;
+    height: 40px;
+    margin: 30px 20px;
     background: #ddd;
 }
 
@@ -180,7 +171,7 @@ section .heading h2{
     top:0;
     bottom: 0;
     position: absolute;
-    content:" ";
+    content: " ";
     width: 5px;
     background: #333;
     left: 50%;
@@ -189,15 +180,15 @@ section .heading h2{
 
 .timeline > li {
     margin-bottom: 20px;
-    position:relative;
+    position: relative;
 }
 
-.timeline > li:after{
+.timeline > li:after {
     clear: both;
 }
 
 .timeline > li:before, .timeline > li:after {
-    content:" ";
+    content: " ";
     display: table;
 }
 
@@ -207,7 +198,7 @@ section .heading h2{
     line-height: 50px;
     font-size: 20px;
     text-align: center;
-    position:absolute;
+    position: absolute;
     top: 16px;
     left: 50%;
     margin-left: -25px;
@@ -237,14 +228,14 @@ section .heading h2{
     background-color: #fff;
 }
 
-.timeline-panel-container-inverted .timeline-panel{
+.timeline-panel-container-inverted .timeline-panel {
     float: left;
     margin-left: 40px;
 }
 
 .timeline-panel:after {
-    position:absolute;
-    top:27px;
+    position: absolute;
+    top: 27px;
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
@@ -257,8 +248,8 @@ section .heading h2{
 .timeline-panel-container-inverted .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
-    left:-14px;
-    right:auto;
+    left: -14px;
+    right: auto;
 }
 
 .timeline-heading h3 {
@@ -303,7 +294,7 @@ section .heading h2{
 }
 
 .education-block h3{
-    color:#d82c2e;
+    color: #d82c2e;
 }
 
 .education-block h4{
@@ -320,30 +311,29 @@ section .heading h2{
 
 /* PORTFOLIO */
 #portfolio {
-    background-color:#d82c2e;
+    background-color: #d82c2e;
 }
 
 #portfolio .heading h2 {
     color: #fff;
 }
 
-#portfolio .row{
+#portfolio .row {
     padding-bottom: 30px;
 }
 
-#portfolio .gray{
+#portfolio .gray {
     width: 100%;
     filter: grayscale(100%);
-    -webkit-filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 #portfolio img {
     width: 100%;
-    
     border-radius: 10px;
 }
 
-#portfolio .gray:hover{
+#portfolio .gray:hover {
     filter: none;
     -webkit-filter:none;
 }
@@ -355,7 +345,7 @@ section .heading h2{
 }
 
 #recommandation .heading h2 {
-    color:#d82c2e;
+    color: #d82c2e;
 }
 
 .carousel-control-next-icon {
@@ -386,7 +376,7 @@ section .heading h2{
     padding: 100px 30px;
 }
 
-#myCarousel .carousel-item h3{
+#myCarousel .carousel-item h3 {
     color: #d82c2e;
     font-style: italic;
 }
@@ -441,7 +431,7 @@ footer h5 {
     height: 25px;
 }
 
-#contact-form input[type=submit]{
+#contact-form input[type=submit] {
     margin: 40px auto 0px;
     display: block;
 }
@@ -461,7 +451,6 @@ i p {
     margin-top: 3px;
     font-size:1rem;
 }
-
 
 .thank-you{
     text-align: center;
