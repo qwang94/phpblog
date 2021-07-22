@@ -1,15 +1,18 @@
 <?php
 session_start();
 
-require('Controller/IndexController.php');
-require('Controller/CrmController.php');
-require('Controller/PostController.php');
-require('Controller/CommentController.php');
+require 'Controller/IndexController.php';
+require 'Controller/CrmController.php';
+require 'Controller/PostController.php';
+require 'Controller/CommentController.php';
 
 try { // On essaie de faire des choses
     if (isset($_GET['action'])) {
         if ($_GET['action'] == 'listPosts') {
             listPosts();
+        }
+        elseif ($_GET['action'] == 'allPosts') {
+            listAllPosts();
         }
         elseif ($_GET['action'] == 'post') {
             if (isset($_GET['id']) && $_GET['id'] > 0) {

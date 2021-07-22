@@ -14,6 +14,14 @@ function listPosts()
     require('View/frontend/post/listPostsView.php');
 }
 
+function listAllPosts()
+{
+    $postManager = new PostManager;
+    $posts = $postManager->getAllPosts();
+
+    require('View/frontend/post/listAllPostsView.php');
+}
+
 function getMyPosts($username)
 {
     $postManager = new PostManager;

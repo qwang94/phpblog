@@ -1,8 +1,8 @@
 <?php 
-    $title = 'Mon blog'; 
+    $title = 'Le blog de Qichao'; 
     $image = 'home-bg.jpg';
-    $pageTitle = 'Qichao\'s Blog';
-    $pageSubTitle = 'Un blog réalisé entièrement avec du PHP';
+    $pageTitle = 'Les archives';
+    $pageSubTitle = 'Retrouvez ici tous les anciens posts';
     $author = null;
     $date = null;
     $plus = null;
@@ -37,9 +37,6 @@
             }
             $posts->closeCursor();
             ?>
-            <div class="d-flex justify-content-end mb-4">
-                <a class="btn btn-primary text-uppercase" href="?action=allPosts">Les + anciens posts →</a>
-            </div>
         </div>
     </div>
     
