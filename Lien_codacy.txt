@@ -1,0 +1,2 @@
+Résultat : Grade B 
+https://app.codacy.com/gh/qwang94/phpblog/dashboard?branch=master
