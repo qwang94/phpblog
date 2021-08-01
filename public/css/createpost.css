@@ -95,7 +95,7 @@ button:hover {
 }
 
 @media (min-width: 568px) {
-  .name-item,
+  .name-item, 
   .contact-item {
     display: flex;
     flex-wrap: wrap;

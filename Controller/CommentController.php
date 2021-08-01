@@ -42,16 +42,6 @@ function getComments($id)
     require('view/frontend/post/commentView.php');
 }
 
-function editComment($author, $comment, $commentId, $postId) 
-{
-    $commentManager = new CommentManager;
-    $newComment = $commentManager->editComment($author, $comment, $commentId, $postId);
-    if ($newComment == false) {
-        throw new Exception('Impossible d\'éditer le commentaire');
-    } else {
-        header('Location: /?action=post&id=' . $postId);
-    }
-}
 
 function validateComment($id, $post_id)
 {

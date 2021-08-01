@@ -37,32 +37,23 @@ class CommentManager extends Manager
         $comments = $db->prepare('INSERT INTO comments(post_id, author, comment, comment_date, validated) VALUES(?, ?, ?, NOW(), ?)');
         $affectedLines = $comments->execute(array($postId, $author, $comment, $validated));
 
-
         return $affectedLines;
-    }
-
-    public function editComment($author, $comment, $id, $postId)
-    {
-        $db = $this->dbConnect();
-        $updateComment = $db->prepare('UPDATE comments SET author = ?, comment = ? WHERE id = ? AND post_id = ?');
-        $newComment = $updateComment->execute(array($author, $comment, $id, $postId));
-
-        return $newComment;
     }
 
     public function validateComment($id)
     {
         $db = $this->dbConnect();
-        $validated_comment = $db->query("UPDATE comments SET validated = 1 WHERE id = '$id'");
+        $validated_comment_pre = $db->prepare("UPDATE comments SET validated = 1 WHERE id = ? ");
+        $validated_comment = $validated_comment_pre->execute(array($id));
 
         return $validated_comment;
-
     }
 
     public function invalidateComment($id)
     {
         $db = $this->dbConnect();
-        $invalidated_comment = $db->query("UPDATE comments SET validated = 0 WHERE id = '$id'");
+        $invalidated_comment_pre = $db->prepare("UPDATE comments SET validated = 0 WHERE id = ?");
+        $invalidated_comment = $invalidated_comment_pre->execute(array($id));
 
         return $invalidated_comment;
     }
@@ -70,7 +61,8 @@ class CommentManager extends Manager
     public function deleteComment($id)
     {
         $db = $this->dbConnect();
-        $deleted_comment = $db->query("DELETE FROM comments WHERE id = '$id' ");
+        $deleted_comment_pre = $db->prepare("DELETE FROM comments WHERE id = ? ");
+        $deleted_comment = $deleted_comment_pre->execute(array($id));
 
         return $deleted_comment;
     }
