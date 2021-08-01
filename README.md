@@ -1,5 +1,6 @@
 # phpblog
 OpenClassrooms Project -> PHP blog
+
 Voici quelques instructions très simples à suivre pour installer ce projet sur votre machine.
 
 1.Aller sur le lien du repository GitHub :
